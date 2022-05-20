@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Lato:wght@300&family=Oswald:wght@200&family=Russo+One&display=swap');
+:root {
+  --black-color: #2f4858;
+  --black1-color: #466978;
+  --black2-color: #608c97;
+  --light-color: #7db0b5;
+  --light1-color: #9fd6d3;
+  --body-bg: #c4fcef;
+  --text-color: #fff;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s all;
+}
+html {
+  scroll-behavior: smooth;
+  transition: 0.6s ease-in-out;
+  font-family: Fredoka;
+}
+body {
+  overflow-x: hidden;
+}
+.navbar {
+  background-color: var(--black1-color);
+  font-size: 20px;
+}
+.card__login {
+  padding: 1.5rem;
+  color: var(--black1-color);
+  width: 450px;
+  margin: auto;
+  margin-top: 14rem;
+  box-shadow: 1px 2px var(--black1-color);
+}
+.card__login {
+  padding: 1.5rem;
+  color: var(--black1-color);
+  width: 450px;
+  margin: auto;
+  margin-top: 10rem;
+  box-shadow: 1px 1px var(--black1-color);
+}
+
+.login__input {
+  width: 390px;
+}
+
+.login {
+  align-items: center;
+  justify-content: center;
+}
+.login a {
+  color: var(--black1-color);
+}
+
+.card__signup {
+  padding: 1.5rem;
+  color: var(--black1-color);
+  width: 450px;
+  margin: auto;
+  margin-top: 8rem;
+  box-shadow: 1px 1px var(--black1-color);
+}
+.card__login .btn,
+.card__signup .btn {
+  background-color: var(--black1-color);
+  width: 390px;
+  color: var(--text-color);
+  border: none;
+  margin-left: -14px;
+}
+
+.card__login .btn:hover,
+.card__signup .btn:hover {
+  background: none;
+  border: 1px solid var(--black1-color);
+  color: var(--black1-color);
+}
+
+.btn-btn {
+  background-color: var(--black1-color);
+  color: var(--text-color);
+  border: none;
+  padding: 0.5rem;
+  width: 200px;
+  border-radius: 4px;
+  box-shadow: 1px 2px var(--black2-color);
+}
+.btn-btn:hover {
+  background: none;
+  color: var(--black1-color);
+  border: 1px solid var(--black1-color);
+  box-shadow: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--black2-color);
+}
+.products {
+  margin-top: 30px;
+  color: #fff;
+}
+.product_item{
+  color: #fff;
+  height: 500px;
+}
+.product_item .image{
+  height: 300px;
+  width: 100%;
+}
+.product_item:hover {
+  box-shadow: 1px 1px #888888;
+}
+.container .filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.container .filter .col-md-3 {
+  margin-left: 1rem;
+}
+.items {
+  list-style: none;
+}
+.items .item {
+  margin: 1rem;
+  background-color: var(--black1-color);
+  padding: 0.5rem;
+  color: #fff;
+}
+@media only screen and (max-width: 548px) {
+  .pagy {
+    width: 400px;
+  }
+  .card-pagy img {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 455px) {
+  .pagy {
+    width: 300px;
+    text-align: center;
+  }
+  .card-pagy img {
+    width: 300px;
+  }
+}
